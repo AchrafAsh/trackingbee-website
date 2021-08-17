@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "TrackingBee marketing website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "build":"npx postcss tailwind.css -o style.css && rm -rf build && mkdir build && cp -r index.js style.css index.html img build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@achrafnotashraf",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  }
+}
